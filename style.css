@@ -1,3 +1,6 @@
+
+
+/* --------- Polices ----------- */
 @font-face 
 {
     font-family: 'droid_sansregular';
@@ -10,29 +13,30 @@
     font-style: normal;
 }
 
-/* ---------- Containers ----------- */
-#flex-container
+h1, h2, h3, ul, p
 {
-	display: flex;
+    font-family: 'droid_sansregular', 'Arial', sans-serif;
 }
 
-.container1
+/*----- couleur background container gauche ----*/
+
+.yellow
 {
-	display: flex;
-	flex-direction: row;
-	min-width: 25%;
-	background-color: yellow;
+	background-color: #FFC107;
 }
 
-.container2
-{
-	display: flex;
-	flex-direction: row;
-	min-width: 75%;
-	background-color: white;
-}
+/*----------- elements blocs de gauche -----------*/
 
-/* --------- Elements de gauche ------------ */
+h3
+{
+	display: block;
+    font-size: 1.20em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 
 /* image */
 .header_image
@@ -53,53 +57,34 @@
 	margin-top: 20px;
 }
 
-/* contact */
-.contact
+/* titres */
+.titre_gauche
 {
-	display: flex;
-	flex-direction: column;
-	min-height: 30px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 10px 0px;
 }
 
+/* contact */
 .contact_text
 {
 	margin-left: 40px;
 	padding: 20px 0;
 }
 
-.a_propos
-{
-	display: flex;
-	flex-direction: column;
-	min-height: 30px;
-	text-align: justify;
-}
-
+/* a propos */
 .a_propostext
 {
 	margin-left: 40px;
 	margin-right: 40px;
 	margin-top: 40px;
-	margin-bottom: 850px;
+	margin-bottom: 610px;
 	text-align: justify;
 }
 
-.loisirs
-{
-	display: flex;
-	flex-direction: column;
-	min-height: 30px;
-}
 
-.titre_gauche
-{
-	text-align: center;
-	background-color: black;
-	color: white;
-	padding: 10px 0;
-}
-
-/* ---------- Elements de droite ----------- */
+/* -------------- Elements de droite -------------- */
 
 /* nom + titre */
 .header_nom
@@ -111,7 +96,7 @@
 
 .prénom_titre
 {
-	color: #FFBF00;
+	color: #FFC107;
 }
 
 h1
@@ -138,13 +123,21 @@ h1
 	padding: 0 40px;
 }
 
+h2 
+{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 
 /* ------ bloc formation -------- */
 
 .bloc_formation
 {
-	display: flex;
-	flex-direction: column;
 	text-align: justify;
 }
 
@@ -172,7 +165,7 @@ h1
     margin-right: 20px;
   	margin-top: 20px;
     padding-top: 4px;
-    color: #FFBF00;
+    color: #FFC107;
     padding: 0 40px;
 }
 
@@ -184,6 +177,7 @@ h1
 .article p 
 {
 	text-align: justify;
+	margin-top: 15px;
 }
 
 
@@ -205,8 +199,6 @@ h1
 
 .bloc_experiences
 {
-	display: flex;
-	flex-direction: column;
 	text-align: justify;
 }
 
@@ -230,17 +222,28 @@ h1
 
 
 
+.titre_section i 
+{
+	color: #FFC107;
+	padding-right: 10px;
+}
+
+h2
+{
+    color: black;
+}
+
+
 /* ---------- Lignes CSS ---------- */
 .dev
 {
 	text-decoration: underline;
-	text-decoration-color: #FFBF00;
-	border-bottom: 30px;
+	text-decoration-color: #FFC107;
 }
 
 .surline
 {
-	border-bottom: 2px solid #FFBF00;
+	border-bottom: 2px solid #FFC107;
     margin-top: -10px;
     margin-left: 40px;
     min-width: 70%
@@ -253,7 +256,6 @@ h1
 	text-align: center;
 	margin-bottom: 20px;
 	font-size: 30px;
-
 }
 
 .Logos i 
@@ -263,60 +265,9 @@ h1
     border: 2px solid black;
     padding: 10px;
     margin: 0 17px;
+    margin-top: 25px;
 }
 
 
-
-/* ---------- Responsive design ----------- */
-
-@media screen (max-width: 768px) {
-	.flex-container
-	{
-		display: block;
-    	align-items: center;
-	}
-	.container1 
-	{
-		width: auto;
-    	height: auto;
-    	align-items: center;
-		display: flex;
-		min-width: 100%;
-	}
-	.container2
-	{
-		width: auto;
-    	height: auto;
-    	align-items: center;
-		display: flex;
-		min-width: 100%;
-	}
-}
-
-
-/* ---------- Texte couleur ----------- */
-
-.titre_section i 
-{
-	color: #FFBF00;
-	padding-right: 10px;
-}
-
-h2
-{
-    color: black;
-}
-
-/* --------- Polices ----------- */
-
-h1, h2, h3, ul
-{
-    font-family: 'droid_sansregular', 'Arial', sans-serif;
-}
-
-p
-{
-	font-family: 'droid_sansregular', 'Arial', sans-serif;
-}
 
 
