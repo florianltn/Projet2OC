@@ -1,4 +1,22 @@
+.container-fluid 
+.haut
+{
+    padding: 0 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
+.row
+{ 
+    margin-left: 0px;
+    margin-right: 0px; 
+    width: 100%;
+    padding: 0 0;
+}
+
+.container {
+    padding :  0;
+}
 
 /* --------- Polices ----------- */
 @font-face 
@@ -25,45 +43,86 @@ h1, h2, h3, ul, p
 	background-color: #FFC107;
 }
 
+/* ----------- header ------------*/
+
+#haut
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+/* image */
+.header_image
+{   
+    display: flex;
+    justify-content: center;
+    min-height: 30px;
+    width: 25%;
+    background-color: #FFC107;
+}
+
+.imageportrait
+{
+    width: 150px;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-content: center;
+}
+
+/* nom + titre */
+.header_nom
+{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-top: 70px;
+}
+
+.prénom_titre
+{
+    color: #FFC107;;
+}
+
+h1
+{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 40px;
+    margin-bottom: 5px;
+}
+
+.developpeurweb
+{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0 40px;
+    margin-bottom: 60px;
+}
+
+
 /*----------- elements blocs de gauche -----------*/
 
 h3
 {
 	display: block;
     font-size: 1.20em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
 }
 
-/* image */
-.header_image
-{	
-    display: flex;
-    flex-direction: column;
-    min-height: 30px;
-}
-
-.imageportrait
-{
-	width: 150px;
-	display: block;
-	margin-left: auto;
-  	margin-right: auto;
-	border: 3px solid black;
-	border-radius: 50%;
-	margin-top: 20px;
-}
 
 /* titres */
-.titre_gauche
+.gauche h3
 {
 	text-align: center;
 	background-color: black;
-	color: white;
-	padding: 10px 0px;
+	color: #FFC107;
+	padding: 4%;
+    margin: 0;
+    border-right: 1px solid #FFC107; 
 }
 
 /* contact */
@@ -86,41 +145,11 @@ h3
 
 /* -------------- Elements de droite -------------- */
 
-/* nom + titre */
-.header_nom
-{
-	display: flex;
-	flex-direction: column;
-	margin-top: 50px;
-}
-
-.prénom_titre
-{
-	color: #FFC107;
-}
-
-h1
-{
-	font-size: 2em;
-	font-weight: bold;
-    margin: 0;
-    padding: 0 40px;
-    margin-bottom: 5px;
-}
-
-.developpeurweb
-{
-	font-weight: bold;
-	font-size: 1.5em;
-	margin: 0;
-    padding: 0 40px;
-    margin-bottom: 60px;
-}
-
 /* titres rubriques */
 .titre_section 
 {
 	padding: 0 40px;
+    margin-top: 5px;
 }
 
 h2 
@@ -247,6 +276,7 @@ h2
 	border-bottom: 2px solid #FFC107;
     margin-top: -10px;
     margin-left: 40px;
+    margin-right: 40px;
     min-width: 70%
 }
 
@@ -273,19 +303,68 @@ h2
 /* ------------ RESPONSIVE ------------ */
 
 @media only screen and (max-width: 900px) {
+    body 
+    header
+    {
+        padding: 0px 0px;
+        width: 100%;
+    }
 
 }
 
 @media only screen and (max-width: 570px) {
-    .article {
+    .article 
+    {
         flex-direction: column;
     }
     .datelieu,
-    .detail {
+    .detail 
+    {
         width: 100%
     }
-    .detail p {
+    .detail p 
+    {
         padding: 0 32px;
     }
+    .container
+    {
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .header_image
+    {
+        width: 100%;
+        background-color: #FFC107;
+    }
+    .header_nom
+    {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 1em;
+    }
+    .bloc_milieu
+    {
+        margin: auto;
+    }
+    .a_propostext
+    {
+        margin-bottom: 40px;
+    }
+    
+
 }
+
+
+@media only screen and (max-width: 350px) {
+    .titre_section
+    {
+        font-size: 1.3em;
+    }
+}
+
+
 

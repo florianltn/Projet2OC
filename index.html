@@ -12,21 +12,27 @@
 </head>
 
 <body>
-<div class="container-fluid row">
+	<header id="container-fluid haut">
+		<section class="row">
+			<section class="container col-xs-12 col-sm-12 col-md-4 col-xl-3 header_image">
+				<!-- classe permettant de centrer et arrondir l'image -->
+				<a href="portrait/moi.jpg"><img src="portrait/moi.mini.jpg" alt="photo Florian Loustaunou" class="imageportrait"/></a>
+				</br>
+			</section>
+			<section class="container col-xs-12 col-sm-12 col-md-8 col-xl-9 header_nom">
+				<h1 class="header_titre"><span class="prénom_titre">FLORIAN</span> LOUSTAUNOU</h1>
+				<p class="developpeurweb"><span class="dev">Dével</span>oppeur Web</p>
+			</section>
+		</section>
+	</header>
+	<div class="container-fluid row">
 		<div class="container yellow col-xs-12 col-sm-12 col-md-4 col-xl-3">
 				<!-- Bloc de mise en page globale -->
-			<header>
-				<div class="header_image">
-					<!-- classe permettant de centrer et arrondir l'image -->
-					<a href="portrait/moi.jpg"><img src="portrait/moi.mini.jpg" alt="photo Florian Loustaunou" class="imageportrait"/></a>
-					</br>
-				</div>
-			</header>
 			<aside class="gauche">
 				<!-- Bloc gauche -->
-				<div class="Contact">
+				<section class="Contact">
 					<!-- Rubrique contact -->
-					<h3 class="titre_gauche">CONTACT</h3>
+					<h3>CONTACT</h3>
 					<div class="contact_text">
 						<p>
 						Adresse
@@ -41,7 +47,7 @@
 						<p>
 						E-mail
 						</br>
-						<a href="mailto:florian.loustaunou@gmail.com">florian.loustaunou@gmail.com</a>
+						<a href="mailto:flowrian64@hotmail.fr">flowrian64@hotmail.fr</a>
 						</p>
 						<p>
 						Mon site
@@ -54,11 +60,11 @@
 						@live:akaflow64
 						</p>
 					</div>	
-				</div>
+				</section>
 
-				<div class="A_propos">
+				<section class="A_propos">
 					<!-- Rubrique A propos de moi -->
-					<h3 class="titre_gauche">A PROPOS DE MOI</h3>
+					<h3>A PROPOS DE MOI</h3>
 					<p class="a_propostext">Passionné depuis toujours par le domaine du Web et des nouvelles technologies, il était logique pour moi de me diriger vers un poste en rapport avec cela.
 					</br>
 					J’ai d’abord choisi, suite à mon BAC option Marketing de continuer mes études dans ce domaine.
@@ -68,29 +74,25 @@
 					</br>
 					En ce mois de mars 2020, je débute donc une formation diplomante de Développeur Web en étant motivé à 100%!
 					</p>
-				</div>
+				</section>
 
-				<div class="Loisirs">
+				<section class="Loisirs">
 					<!-- Rubrique Loisirs -->
-					<h3 class="titre_gauche">LOISIRS</h3>
+					<h3>LOISIRS</h3>
 					<div class="Logos">
 						<i class="fas fa-laptop"></i>
 						<i class="fas fa-plane-departure"></i>
-						<i class="fas fa-headphones"></i>
+						<i class="fas fa-headphones"></i> 
 					</div>
-				</div>
+				</section> 
 			</aside>
 		</div>
 
 		<div class="container col-xs-12 col-sm-12 col-md-8 col-xl-9">
-			<section>
-				<div class="header_nom">
-					<h1 class="header_titre"><span class="prénom_titre">FLORIAN</span> LOUSTAUNOU</h1>
-					<p class="developpeurweb"><span class="dev">Dével</span>oppeur Web</p>
-				</div>
+			<aside>
 				<!-- Bloc droit -->
 				<div class="bloc_milieu">
-					<div class="bloc_formation">
+					<section class="bloc_formation">
 						<h2 class="titre_section"> <i class="fas fa-graduation-cap"></i>FORMATION</h2>
 						<div class="surline"></div>
 						<!-- Formation OPC -->
@@ -140,9 +142,9 @@
 								<p>Baccalauréat Sciences et Technologies du Management et de la Gestion, option Marketing.</p>
 							</div>
 						</article>
-					</div>
+					</section>
 
-					<div class=" bloc_experiences">
+					<section class=" bloc_experiences">
 						<h2 class="titre_section"> <i class="fas fa-suitcase"></i>EXPERIENCES PROFESSIONNELLES</h2>
 						<div class="surline"></div>
 						<!-- Uber Eats -->
@@ -151,7 +153,7 @@
 								<i class="far fa-dot-circle"></i>
 								<p>2019 - 2020
 								</br>
-								Bordeaux - Cenon
+								Bordeaux
 								</p>
 							</div>
 							<div class="detail">
@@ -170,7 +172,7 @@
 								</p>
 							</div>
 							<div class="detail">
-								<p><strong>Conseille commercial</strong></p>
+								<p><strong>Conseiller commercial</strong></p>
 								<p>AXA</p>
 								<p>Taches réalisées:
 									<ul>
@@ -209,22 +211,16 @@
 								</p>
 							</div>
 						</article>
-					</div>
-					<div class=" bloc_recommandations">
-							
-						</article>
-		</div>
-			
+					</section>
 
-			<footer>
-					<div class="bloc_recommandations">
+					<section class="bloc_recommandations">
 							<!-- Bas de page -->
 						<h2 class="titre_section"><i class="fas fa-user-check"></i>RECOMMANDATIONS</h2>
 						<div class="surline"></div>
 						<article>
 							<div class="recommandation">
 								<p><strong>EL KEFI SELIM</strong></p>
-								<p>Mentor OpenClassrooms
+								<p>Mentor Formation
 								</br>
 								XX.XX.XX.XX.XX
 								</br>
@@ -233,7 +229,7 @@
 							</div>
 							<div class="recommandation">
 								<p><strong>MENTING HUGO</strong></p>
-								<p>Développeur Freelance
+								<p>Développeur Web
 								</br>
 								XX.XX.XX.XX.XX
 								</br>
@@ -241,8 +237,10 @@
 								</p>			
 							</div>
 						</article>
-					</div>
-			</footer>
-</div>
+					</section>
+			</aside>
+		</div>
+			
+	</div>
 </body>
 </html>
