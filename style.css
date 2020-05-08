@@ -61,7 +61,7 @@ h1, h2, h3, ul, p
     background-color: #FFC107;
 }
 
-.imageportrait
+#imageportrait
 {
     width: 150px;
     border: 3px solid black;
@@ -80,7 +80,7 @@ h1, h2, h3, ul, p
     margin-top: 70px;
 }
 
-.prénom_titre
+#prénom_titre
 {
     color: #FFC107;;
 }
@@ -94,7 +94,7 @@ h1
     margin-bottom: 5px;
 }
 
-.developpeurweb
+#developpeurweb
 {
     font-weight: bold;
     font-size: 1.5em;
@@ -115,7 +115,7 @@ h3
 
 
 /* titres */
-.gauche h3
+#gauche h3
 {
 	text-align: center;
 	background-color: black;
@@ -126,19 +126,19 @@ h3
 }
 
 /* contact */
-.contact_text
+#contact_text
 {
 	margin-left: 40px;
 	padding: 20px 0;
 }
 
 /* a propos */
-.a_propostext
+#a_propostext
 {
 	margin-left: 40px;
 	margin-right: 40px;
 	margin-top: 40px;
-	margin-bottom: 610px;
+	margin-bottom: 685px;
 	text-align: justify;
 }
 
@@ -165,9 +165,10 @@ h2
 
 /* ------ bloc formation -------- */
 
-.bloc_formation
+#bloc_formation
 {
 	text-align: justify;
+    margin-bottom: 50px;
 }
 
 /* articles */
@@ -227,16 +228,17 @@ h2
 
 /* ------bloc experiences -------- */
 
-.bloc_experiences
+#bloc_experiences
 {
 	text-align: justify;
+    margin-top: 20px;
 }
 
 /* ------bloc recommandations -------- */
 
 
 
-.bloc_recommandations article  
+#bloc_recommandations article  
 {
 	display: flex;
 	flex-direction: row;
@@ -265,7 +267,7 @@ h2
 
 
 /* ---------- Lignes CSS ---------- */
-.dev
+#dev
 {
 	text-decoration: underline;
 	text-decoration-color: #FFC107;
@@ -282,14 +284,14 @@ h2
 
 /* ---------- Icones ----------- */
 
-.Logos
+#Logos
 {
 	text-align: center;
 	margin-bottom: 20px;
 	font-size: 30px;
 }
 
-.Logos i 
+#Logos i 
 {
    	line-height: 1em;
     border-radius: 50%;
@@ -302,6 +304,59 @@ h2
 
 /* ------------ RESPONSIVE ------------ */
 
+@media only screen and (max-width: 1200px) {
+    .container
+    {
+        min-width: 100%;
+    }
+    .haut
+    {
+        min-width: 100%;
+    }
+    .header_image
+    {
+        min-width: 100%;
+    }
+    .header_nom
+    {
+        min-width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #developpeurweb
+    {
+        margin-bottom: 0px;
+    }
+    .row
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+    .yellow
+    {
+        min-width: 100%;
+    }
+    #gauche
+    {
+        min-width: 100%;
+        flex-direction: column;
+    }
+    #a_propostext
+    {
+        margin-bottom: 40px;
+    }
+    #gauche h3
+    {
+        padding: 20px 10px;
+    }
+    #bloc_milieu
+    {
+        min-width: 100%;
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     body 
     header
@@ -312,7 +367,7 @@ h2
 
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 768px) {
     .article 
     {
         flex-direction: column;
@@ -341,20 +396,19 @@ h2
     .header_nom
     {
         width: 100%;
-        margin-top: 10px;
-        margin-bottom: 0px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         text-align: center;
         font-size: 1em;
     }
-    .bloc_milieu
+    #bloc_milieu
     {
         margin: auto;
     }
-    .a_propostext
+    #a_propostext
     {
         margin-bottom: 40px;
     }
-    
 
 }
 
