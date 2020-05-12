@@ -106,17 +106,11 @@ h1
 
 /*----------- elements blocs de gauche -----------*/
 
-h3
-{
-	display: block;
-    font-size: 1.20em;
-    font-weight: bold;
-}
-
-
 /* titres */
 #gauche h3
 {
+    font-size: 1.20em;
+    font-weight: bold;
 	text-align: center;
 	background-color: black;
 	color: #FFC107;
@@ -156,10 +150,7 @@ h2
 {
     display: block;
     font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-bottom: 0.83em;
     font-weight: bold;
 }
 
@@ -188,7 +179,6 @@ h2
     display: flex;
     flex-direction: row;
     width: 35%;
-    /* padding-right: 20px; */
 }
 
 .datelieu i
@@ -197,13 +187,7 @@ h2
   	margin-top: 20px;
     padding-top: 4px;
     color: #FFC107;
-    /* padding: 0 40px; */
 }
-
-/* .datelieu p
-{
-	padding: 0px 20px;
-} */
 
 .article p 
 {
@@ -271,6 +255,7 @@ h2
 {
 	text-decoration: underline;
 	text-decoration-color: #FFC107;
+    text-underline-position: under;
 }
 
 .surline
@@ -355,16 +340,6 @@ h2
         min-width: 100%;
         flex-direction: column;
     }
-}
-
-@media only screen and (max-width: 900px) {
-    body 
-    header
-    {
-        padding: 0px 0px;
-        width: 100%;
-    }
-
 }
 
 @media only screen and (max-width: 768px) {
